@@ -5,9 +5,6 @@ module.exports = function getSeason(date) {
         return 'Unable to determine the time of year!'
     }
     const month = date.getMonth() + 1;
-    if (month > 12 && month < 1 || typeof month !== 'number') {
-         throw new Error('Error');
-    }
     try {
         date.getTime();
     } catch(err) {
