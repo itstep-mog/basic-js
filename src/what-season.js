@@ -8,7 +8,7 @@ module.exports = function getSeason(date) {
     try {
         date.getTime();
     } catch(err) {
-        throw new Error('ERROR');
+        throw new Error(err);
     }
     switch(month) {
         case 12:
